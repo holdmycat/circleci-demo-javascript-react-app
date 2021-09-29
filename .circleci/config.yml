@@ -1,4 +1,7 @@
-version:2.1
+version: 2.1
+
+orbs:
+  node: circleci/node@3.0.0
 
 workflows:
   test-deploy:
@@ -6,7 +9,7 @@ workflows:
       - test 
 
 
-jobs
+jobs:
   test:
     docker:
       - image: cimg/node:16.10.0
